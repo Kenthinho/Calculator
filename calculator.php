@@ -1,22 +1,22 @@
 <?php
-$num1 = $_POST['num1'];
-$num2 = $_POST['num2'];
+$digit1 = $_POST['digit1'];
+$digit2 = $_POST['digit2'];
 $operator = $_POST['operator'];
 $result = '';
 
-if (is_numeric($num1) && is_numeric($num2)) {
+if (is_numeric($digit1) && is_numeric($digit2)) {
     switch ($operator) {
         case "Add":
-           $result = $num1 + $num2;
+           $result = $digit1 + $digit2;
             break;
         case "Subtract":
-           $result = $num1 - $num2;
+           $result = $digit1 - $digit2;
             break;
         case "Multiply":
-            $result = $num1 * $num2;
+            $result = $digit1 * $digit2;
             break;
         case "Divide":
-            $result = $num1 / $num2;
+            $result = $digit1 / $digit2;
     }
 }
 ?>
@@ -24,13 +24,13 @@ if (is_numeric($num1) && is_numeric($num2)) {
 <html>
     <body>
         <div id="page-wrap">
-        <h1>Side Hustle - Simple Calculator Program</h1>
+        <h1>Calculator Program</h1>
         <form action="" method="post" id="quiz-for-task1">
                 <p>
-                    <input type="number" name="num1" id="num1" required="required" value="<?php echo $num1; ?>" /> <b>First Number</b>
+                    <input type="number" name="digit1" id="digit1" required="required" value="<?php echo $digit1; ?>" /> <b>First Num</b>
                 </p>
                 <p>
-                    <input type="number" name="num2" id="num2" required="required" value="<?php echo $num2; ?>" /> <b>Second Number</b>
+                    <input type="number" name="digit2" id="digit2" required="required" value="<?php echo $digit2; ?>" /> <b>Second Num</b>
                 </p>
                 <p>
                     <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>Result</b>
