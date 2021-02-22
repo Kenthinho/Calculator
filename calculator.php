@@ -33,7 +33,7 @@ if (is_numeric($digit1) && is_numeric($digit2)) {
                     <input type="number" name="digit2" id="digit2" required="required" value="<?php echo $digit2; ?>" /> <b>Second Num</b>
                 </p>
                 <p>
-                    <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>Result</b>
+                    <input readonly="readonly" name="result" value="<?php echo $result; ?>"> <b>ANSWER</b>
                 </p>
                 <input type="submit" name="operator" value="Add" />
                 <input type="submit" name="operator" value="Subtract" />
